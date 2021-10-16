@@ -1,6 +1,7 @@
 from input_validation import validate_input
 from GuessGame import play as play_guess_game
 from MemoryGame import play as play_memory_game
+from CurrencyRouletteGame import play as play_currency_roulette_game
 
 
 def welcome(name):
@@ -27,7 +28,7 @@ def welcome(name):
             difficulty = input('Please choose game difficulty from 1 to 5:')
             chosen_difficulty = validate_input('difficulty', difficulty, 0)
             difficulty_pending = False
-            load_game(chosen_game,chosen_difficulty)
+            load_game(chosen_game, chosen_difficulty)
             return
         except BaseException as error:
             print(error)

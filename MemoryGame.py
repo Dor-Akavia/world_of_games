@@ -7,7 +7,7 @@ from input_validation import validate_input
 def generate_sequence(difficulty):
     sequence_string = ''
     for i in range(0, difficulty):
-        n = str(random.randint(1, 10))
+        n = str(random.randint(1, 9))
         sequence_string = n + sequence_string
 
     sys.stdout.write(sequence_string)
