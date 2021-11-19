@@ -1,0 +1,5 @@
+dor, 55
+gal, 6
+mom, 2
+ben, 37
+Test, 35
